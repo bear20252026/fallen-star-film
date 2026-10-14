@@ -1,0 +1,5 @@
+out/
+film/chunks/
+__pycache__/
+*.pyc
+*.log
