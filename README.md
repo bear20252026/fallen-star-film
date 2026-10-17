@@ -20,6 +20,7 @@ Subtitles are in English and 中文, with a synthesized score and no voices.
 | `stills/` | one check frame per scene |
 | `docs/` | plan, script, production notes |
 | `*_try.py`, `test_*.py`, `shot_test*.py` | look-development tests |
+| `old-cutout-version/` | the first, rejected cut-out version (kept for the record) |
 
 ## Render
 Requires Python 3 with numpy, opencv-python, Pillow and scipy, plus ffmpeg.
@@ -29,3 +30,12 @@ bash film/par.sh s01        # 4 workers render scene 1 in 30 s chunks, then join
 python3 film/render_scene.py s05 2   # a single worker; 2 = motion-blur samples per frame
 ```
 Each scene takes about 2 hours on 4 cores. Re-running a script skips chunks that are already finished.
+
+## Rebuild the whole film
+```bash
+for s in s01 s02 s03 s04 s05 s06 s07 s08 s09 s10 s11 s12 s13; do bash film/par.sh $s; done
+bash film/join_film.sh      # joins out/scenes/S01..S13.mp4 -> out/The_Fallen_Star.mp4 (60:00)
+```
+The whole hour takes about 26 hours on 4 cores (about 20 minutes of rendering per minute of film).
+All pictures and sound are made by the code, so nothing else is needed.
+A rebuild gives the same film, but the file is not byte-for-byte identical (video encoding and library versions differ slightly).

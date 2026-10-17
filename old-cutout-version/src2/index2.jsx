@@ -1,0 +1,23 @@
+import React from 'react';
+import {registerRoot, Composition, Audio, staticFile, AbsoluteFill} from 'remotion';
+import {Stage2} from './Stage2.jsx';
+import * as test from './test.js';
+import * as s01 from './s01.js';
+import * as s02 from './s02.js';
+import * as s03 from './s03.js';
+import * as s04 from './s04.js';
+import * as s05 from './s05.js';
+import * as s06 from './s06.js';
+import * as s07 from './s07.js';
+import * as s08 from './s08.js';
+import * as s09 from './s09.js';
+import * as s10 from './s10.js';
+import * as s11 from './s11.js';
+import * as s12 from './s12.js';
+import * as s13 from './s13.js';
+const FPS = 24;
+const SC = {Test: test, S01: s01, S02: s02, S03: s03, S04: s04, S05: s05, S06: s06, S07: s07, S08: s08, S09: s09, S10: s10, S11: s11, S12: s12, S13: s13};
+const Part = ({part, audio}) => (<AbsoluteFill><Stage2 part={part} />{audio && !process.env.NOAUDIO ? <Audio src={staticFile(audio)} /> : null}</AbsoluteFill>);
+const Root = () => (<>{Object.entries(SC).map(([id, m]) => (
+  <Composition key={id} id={id} component={() => <Part part={m} audio={m.AUDIO} />} durationInFrames={Math.round(m.DURATION * FPS)} fps={FPS} width={1920} height={804} />))}</>);
+registerRoot(Root);

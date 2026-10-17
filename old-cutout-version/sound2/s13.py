@@ -1,0 +1,11 @@
+import sys; sys.path.insert(0, 'sound2'); from lib2 import *
+D = 80; M = Mix(D)
+score(M, 0, 80, 'warm', 4, 0.045, beat=0.75)
+melody(M, PIP, 2, 0.55, 0.05, 'piano')
+melody(M, PIP, 22, 0.55, 0.045, 'bell')
+melody(M, PIP, 42, 0.55, 0.05, 'piano', transpose=5)
+melody(M, PIP, 60, 0.6, 0.045, 'bell')
+for a in np.arange(5.5, 76, 5.457): chime(M, a, 0.015, 0.5 + 0.2 * np.sin(a), 2)
+pad([['C4', 'E4', 'G4', 'C5'], ['F3', 'A3', 'C4', 'F4'], ['C4', 'E4', 'G4', 'C5']], 70, 3.3, 0.05, M)
+M.write(sys.argv[1], 1.5, 3.5)
+print('ok')

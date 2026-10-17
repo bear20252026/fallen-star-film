@@ -1,0 +1,21 @@
+{
+  "name": "the-sheep-in-the-box",
+  "private": true,
+  "scripts": {
+    "studio": "remotion studio src/index.jsx",
+    "render:part1": "remotion render src/index.jsx Part1 out/Part1.mp4",
+    "render:part2": "remotion render src/index.jsx Part2 out/Part2.mp4",
+    "render:film": "remotion render src/index.jsx Film out/The_Sheep_in_the_Box.mp4"
+  },
+  "dependencies": {
+    "@fontsource/lora": "^5.3.0",
+    "@fontsource/noto-serif-sc": "^5.3.0",
+    "@remotion/bundler": "4.0.532",
+    "@remotion/cli": "4.0.532",
+    "@remotion/renderer": "4.0.532",
+    "gsap": "^3.15.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "remotion": "4.0.532"
+  }
+}

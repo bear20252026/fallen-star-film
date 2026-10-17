@@ -1,0 +1,724 @@
+{
+ "C1": {
+  "parts": {
+   "body_bright": [
+    90,
+    208,
+    1020,
+    1034
+   ],
+   "body_pale": [
+    71,
+    225,
+    1058,
+    1001
+   ],
+   "body_grey": [
+    91,
+    208,
+    1018,
+    1034
+   ],
+   "eyes_open": [
+    396,
+    708,
+    408,
+    214
+   ],
+   "eyes_closed": [
+    396,
+    733,
+    408,
+    165
+   ],
+   "eyes_laugh": [
+    396,
+    722,
+    408,
+    186
+   ],
+   "mouth_smile": [
+    528,
+    849,
+    143,
+    72
+   ],
+   "mouth_laugh": [
+    501,
+    825,
+    199,
+    129
+   ],
+   "mouth_tired": [
+    541,
+    849,
+    120,
+    64
+   ]
+  },
+  "states": {
+   "pip_bright_happy": [
+    "body_bright",
+    "eyes_open",
+    "mouth_smile"
+   ],
+   "pip_bright_closed": [
+    "body_bright",
+    "eyes_closed",
+    "mouth_tired"
+   ],
+   "pip_bright_laughing": [
+    "body_bright",
+    "eyes_laugh",
+    "mouth_laugh"
+   ],
+   "pip_pale_happy": [
+    "body_pale",
+    "eyes_open",
+    "mouth_smile"
+   ],
+   "pip_pale_closed": [
+    "body_pale",
+    "eyes_closed",
+    "mouth_tired"
+   ],
+   "pip_pale_laughing": [
+    "body_pale",
+    "eyes_laugh",
+    "mouth_laugh"
+   ],
+   "pip_grey_happy": [
+    "body_grey",
+    "eyes_open",
+    "mouth_smile"
+   ],
+   "pip_grey_closed": [
+    "body_grey",
+    "eyes_closed",
+    "mouth_tired"
+   ],
+   "pip_grey_laughing": [
+    "body_grey",
+    "eyes_laugh",
+    "mouth_laugh"
+   ]
+  },
+  "scale": {
+   "relative_to_sheep": 0.16
+  }
+ },
+ "C2": {
+  "parts": {
+   "wing_left_open": [
+    61,
+    540,
+    583,
+    630
+   ],
+   "wing_right_open": [
+    556,
+    541,
+    583,
+    629
+   ],
+   "wing_left_folded": [
+    331,
+    803,
+    278,
+    315
+   ],
+   "wing_right_folded": [
+    591,
+    752,
+    278,
+    416
+   ],
+   "body": [
+    391,
+    711,
+    418,
+    429
+   ],
+   "head": [
+    365,
+    324,
+    470,
+    402
+   ],
+   "face_sad": [
+    450,
+    538,
+    299,
+    225
+   ],
+   "face_surprised": [
+    450,
+    520,
+    299,
+    260
+   ],
+   "face_laughing": [
+    451,
+    525,
+    299,
+    250
+   ]
+  },
+  "states": {
+   "moth_open_sad": [
+    "wing_left_open",
+    "wing_right_open",
+    "body",
+    "head",
+    "face_sad"
+   ],
+   "moth_open_surprised": [
+    "wing_left_open",
+    "wing_right_open",
+    "body",
+    "head",
+    "face_surprised"
+   ],
+   "moth_open_laughing": [
+    "wing_left_open",
+    "wing_right_open",
+    "body",
+    "head",
+    "face_laughing"
+   ],
+   "moth_folded_sad": [
+    "wing_left_folded",
+    "wing_right_folded",
+    "body",
+    "head",
+    "face_sad"
+   ],
+   "moth_folded_surprised": [
+    "wing_left_folded",
+    "wing_right_folded",
+    "body",
+    "head",
+    "face_surprised"
+   ],
+   "moth_folded_laughing": [
+    "wing_left_folded",
+    "wing_right_folded",
+    "body",
+    "head",
+    "face_laughing"
+   ]
+  },
+  "scale": {
+   "relative_to_boy": 2.0
+  }
+ },
+ "C3": {
+  "parts": {
+   "body": [
+    357,
+    601,
+    486,
+    788
+   ],
+   "head": [
+    380,
+    238,
+    440,
+    504
+   ],
+   "arm_left_rest": [
+    305,
+    586,
+    222,
+    351
+   ],
+   "arm_right_rest": [
+    671,
+    584,
+    234,
+    352
+   ],
+   "arm_left_winding_clock": [
+    455,
+    668,
+    290,
+    184
+   ],
+   "arm_right_winding_key": [
+    545,
+    675,
+    235,
+    148
+   ],
+   "attachment_tabs_body": [
+    419,
+    619,
+    367,
+    98
+   ],
+   "attachment_tabs_arm_left_rest": [
+    472,
+    584,
+    67,
+    76
+   ],
+   "attachment_tabs_arm_right_rest": [
+    671,
+    585,
+    78,
+    81
+   ],
+   "attachment_tabs_arm_left_winding_clock": [
+    476,
+    668,
+    51,
+    55
+   ],
+   "attachment_tabs_arm_right_winding_key": [
+    707,
+    676,
+    45,
+    48
+   ]
+  },
+  "states": {
+   "clockmaker_standing": [
+    "body",
+    "head",
+    "arm_left_rest",
+    "arm_right_rest"
+   ],
+   "clockmaker_winding": [
+    "body",
+    "head",
+    "arm_left_winding_clock",
+    "arm_right_winding_key"
+   ]
+  },
+  "scale": {
+   "relative_to_boy": 0.45
+  }
+ },
+ "C4": {
+  "parts": {
+   "body": [
+    80,
+    211,
+    1041,
+    808
+   ],
+   "face_happy": [
+    421,
+    570,
+    358,
+    220
+   ],
+   "face_sad": [
+    421,
+    594,
+    358,
+    172
+   ],
+   "rain": [
+    357,
+    993,
+    486,
+    483
+   ]
+  },
+  "states": {
+   "cloud_happy": [
+    "body",
+    "face_happy"
+   ],
+   "cloud_sad_raining": [
+    "body",
+    "face_sad",
+    "rain"
+   ]
+  },
+  "scale": {
+   "relative_to_sheep": 1.2
+  }
+ },
+ "C5": {
+  "parts": {
+   "leg_hind_left": [
+    615,
+    982,
+    159,
+    216
+   ],
+   "leg_hind_right": [
+    810,
+    982,
+    159,
+    216
+   ],
+   "tail": [
+    880,
+    698,
+    169,
+    154
+   ],
+   "body": [
+    323,
+    491,
+    764,
+    618
+   ],
+   "leg_front_left": [
+    393,
+    1012,
+    163,
+    255
+   ],
+   "leg_front_right": [
+    528,
+    1025,
+    163,
+    231
+   ],
+   "head_open": [
+    135,
+    415,
+    569,
+    410
+   ],
+   "head_closed": [
+    135,
+    413,
+    568,
+    415
+   ],
+   "head_laughing": [
+    136,
+    416,
+    569,
+    409
+   ]
+  },
+  "states": {
+   "sheep_rig_open": [
+    "leg_hind_left",
+    "leg_hind_right",
+    "tail",
+    "body",
+    "leg_front_left",
+    "leg_front_right",
+    "head_open"
+   ],
+   "sheep_rig_closed": [
+    "leg_hind_left",
+    "leg_hind_right",
+    "tail",
+    "body",
+    "leg_front_left",
+    "leg_front_right",
+    "head_closed"
+   ],
+   "sheep_rig_laughing": [
+    "leg_hind_left",
+    "leg_hind_right",
+    "tail",
+    "body",
+    "leg_front_left",
+    "leg_front_right",
+    "head_laughing"
+   ]
+  },
+  "scale": {
+   "relative_to_boy": 0.7
+  }
+ },
+ "C6": {
+  "parts": {
+   "arm_screen_left": [
+    256,
+    604,
+    283,
+    253
+   ],
+   "arm_screen_right": [
+    661,
+    605,
+    283,
+    249
+   ],
+   "leg_screen_left": [
+    383,
+    914,
+    244,
+    252
+   ],
+   "leg_screen_right": [
+    574,
+    920,
+    242,
+    240
+   ],
+   "body": [
+    375,
+    577,
+    449,
+    406
+   ],
+   "head_open": [
+    368,
+    230,
+    464,
+    390
+   ],
+   "head_closed": [
+    369,
+    236,
+    463,
+    379
+   ],
+   "head_laughing": [
+    367,
+    228,
+    466,
+    393
+   ],
+   "scarf_gold": [
+    103,
+    535,
+    599,
+    360
+   ]
+  },
+  "states": {
+   "boy_rig_open": [
+    "arm_screen_left",
+    "arm_screen_right",
+    "leg_screen_left",
+    "leg_screen_right",
+    "body",
+    "head_open",
+    "scarf_gold"
+   ],
+   "boy_rig_closed": [
+    "arm_screen_left",
+    "arm_screen_right",
+    "leg_screen_left",
+    "leg_screen_right",
+    "body",
+    "head_closed",
+    "scarf_gold"
+   ],
+   "boy_rig_laughing": [
+    "arm_screen_left",
+    "arm_screen_right",
+    "leg_screen_left",
+    "leg_screen_right",
+    "body",
+    "head_laughing",
+    "scarf_gold"
+   ]
+  },
+  "scale": {
+   "relative_to_boy": 1.0
+  }
+ },
+ "C7": {
+  "parts": {
+   "arm_screen_left": [
+    255,
+    589,
+    284,
+    282
+   ],
+   "arm_screen_right": [
+    661,
+    596,
+    283,
+    270
+   ],
+   "leg_screen_left": [
+    382,
+    923,
+    245,
+    254
+   ],
+   "leg_screen_right": [
+    573,
+    939,
+    244,
+    221
+   ],
+   "body": [
+    376,
+    544,
+    448,
+    472
+   ],
+   "head_open": [
+    369,
+    215,
+    463,
+    421
+   ],
+   "head_closed": [
+    368,
+    218,
+    464,
+    413
+   ],
+   "head_laughing": [
+    368,
+    218,
+    463,
+    415
+   ],
+   "scarf_white": [
+    103,
+    549,
+    598,
+    332
+   ]
+  },
+  "states": {
+   "pilot_rig_open": [
+    "arm_screen_left",
+    "arm_screen_right",
+    "leg_screen_left",
+    "leg_screen_right",
+    "body",
+    "head_open",
+    "scarf_white"
+   ],
+   "pilot_rig_closed": [
+    "arm_screen_left",
+    "arm_screen_right",
+    "leg_screen_left",
+    "leg_screen_right",
+    "body",
+    "head_closed",
+    "scarf_white"
+   ],
+   "pilot_rig_laughing": [
+    "arm_screen_left",
+    "arm_screen_right",
+    "leg_screen_left",
+    "leg_screen_right",
+    "body",
+    "head_laughing",
+    "scarf_white"
+   ]
+  },
+  "scale": {
+   "relative_to_boy": 1.53
+  }
+ },
+ "poses": {
+  "C5_front": [
+   632,
+   146,
+   1136,
+   1208
+  ],
+  "C5_laughing": [
+   554,
+   146,
+   1292,
+   1209
+  ],
+  "C5_sitting": [
+   544,
+   146,
+   1312,
+   1208
+  ],
+  "C5_sleeping": [
+   261,
+   146,
+   1879,
+   1208
+  ],
+  "C5_standing": [
+   671,
+   146,
+   1058,
+   1208
+  ],
+  "C5_walking": [
+   605,
+   146,
+   1190,
+   1209
+  ],
+  "C6_laughing": [
+   753,
+   146,
+   894,
+   1209
+  ],
+  "C6_sitting": [
+   579,
+   146,
+   1242,
+   1208
+  ],
+  "C6_sleeping": [
+   106,
+   146,
+   2187,
+   1208
+  ],
+  "C6_standing": [
+   836,
+   146,
+   728,
+   1209
+  ],
+  "C6_walking": [
+   729,
+   146,
+   942,
+   1208
+  ],
+  "C6_waving": [
+   743,
+   146,
+   913,
+   1209
+  ],
+  "C7_laughing": [
+   786,
+   145,
+   829,
+   1209
+  ],
+  "C7_rear_view": [
+   845,
+   146,
+   709,
+   1208
+  ],
+  "C7_sitting": [
+   663,
+   146,
+   1074,
+   1208
+  ],
+  "C7_sleeping": [
+   96,
+   286,
+   2208,
+   927
+  ],
+  "C7_standing": [
+   850,
+   146,
+   702,
+   1209
+  ],
+  "C7_walking": [
+   778,
+   146,
+   844,
+   1209
+  ]
+ }
+}

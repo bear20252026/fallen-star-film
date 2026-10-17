@@ -3,3 +3,5 @@ film/chunks/
 __pycache__/
 *.pyc
 *.log
+film/cache/
+*.npz
